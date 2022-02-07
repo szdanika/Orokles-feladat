@@ -24,10 +24,13 @@ namespace Orokles
         }
         public override void Mozog()
         {
-            if(IdeLephet(iranyX * sebeseg, iranyY * sebeseg))
+            if(IdeLephet(x+1,y+1))//IdeLephet(iranyX * sebeseg, iranyY * sebeseg))
             {
-                x = iranyX * sebeseg;
-                y = iranyY * sebeseg;
+                //x = iranyX * sebeseg;
+                //y = iranyY * sebeseg;
+
+                x = x + 1;
+                y = y + 1;
             }
         }
     }

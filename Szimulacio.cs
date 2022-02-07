@@ -8,9 +8,10 @@ namespace Orokles
 {
     class Szimulacio : TerkepEsJarmuRajzolo
     {
+        Terkep t;
         public Szimulacio(Terkep terkep, int meret) : base(terkep, meret)
         {
-
+            t = terkep;
         }
         public void EgyIdoEgysegEltelt()
         {
@@ -18,8 +19,17 @@ namespace Orokles
             {
                 if(jarmuvek[i] is MozgoJarmu)
                 {
-                    jarmuvek[i].Mozog();
+                    (jarmuvek[i] as MozgoJarmu).Mozog();
                 }
+            }
+        }
+        public void Fut()
+        {
+            while (true)
+            {
+                EgyIdoEgysegEltelt();
+                Kirajzol();
+                System.Threading.Thread.Sleep(500);
             }
         }
     }

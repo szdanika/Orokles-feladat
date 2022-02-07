@@ -8,7 +8,7 @@ namespace Orokles
 {
     class Jarmu
     {
-        public char azonosito;
+        public char azonosito = '*';
         protected float x, y;
         Terkep terkep;
         public Jarmu(float X, float Y)
