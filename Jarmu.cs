@@ -10,7 +10,7 @@ namespace Orokles
     {
         public char azonosito = '*';
         protected float x, y;
-        Terkep terkep;
+        protected Terkep terkep;
         public Jarmu(float X, float Y)
         {
             terkep = new Terkep(80,25);
